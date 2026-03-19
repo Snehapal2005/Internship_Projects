@@ -1,24 +1,19 @@
-document.addEventListner("DOMContentLoaded",function (){
+document.addEventListener("DOMContentLoaded", function () {
+    const display = document.getElementById("display");
 
-let display = document.getElementById("display");
+    window.appendValue = function(value) {
+        display.value += value;
+    };
 
-function append(value) {
-  display.value += value;
-}
+    window.clearDisplay = function() {
+        display.value = "";
+    };
 
-function clearDisplay() {
-  display.value = "";
-}
-
-function calculate() {
-  try {
-    display.value = eval(display.value);
-  } catch {
-    display.value = "Error";
-  }
-}
-  window.appendValue =appendValue;
-  window.clearDisplay = clearDisplay;
-  window.calculator=calculator;
+    window.calculate = function() {
+        try {
+            display.value = eval(display.value);
+        } catch {
+            display.value = "Error";
+        }
+    };
 });
-  
