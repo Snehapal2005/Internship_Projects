@@ -1,3 +1,5 @@
+document.addEventListner("DOMContentLoaded",function (){
+
 let display = document.getElementById("display");
 
 function append(value) {
@@ -15,3 +17,8 @@ function calculate() {
     display.value = "Error";
   }
 }
+  window.appendValue =appendValue;
+  window.clearDisplay = clearDisplay;
+  window.calculator=calculator;
+});
+  
