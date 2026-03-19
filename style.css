@@ -1,34 +1,86 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #111;
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
 }
 
-.calculator {
-  background: #222;
+/* Header */
+header {
+  padding: 60px 20px 30px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+header p {
+  color: #38bdf8;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  margin-top: 20px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Image */
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+#about img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+#about p {
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* Text */
+p {
+  line-height: 1.6;
+}
+
+/* Skills */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px;
+}
+
+/* Cards */
+.card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Footer */
+footer {
   padding: 20px;
-  border-radius: 10px;
-}
-
-#display {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  text-align: right;
-  padding: 5px;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 60px);
-  gap: 10px;
-}
-
-button {
-  height: 50px;
-  font-size: 18px;
-  cursor: pointer;
+  background: #020617;
 }
