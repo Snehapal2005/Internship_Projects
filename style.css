@@ -1,34 +1,32 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: #0f172a;
   color: white;
   text-align: center;
 }
 
 /* Header */
 header {
-  padding: 60px 20px 30px;
+  background: #1e293b;
+  padding: 30px;
 }
 
 header h1 {
-  font-size: 40px;
   margin: 0;
+  font-size: 32px;
 }
 
-header p {
-  color: #38bdf8;
-  margin-top: 10px;
+header {
+  background: #1e293b;
+  padding: 40px 20px;
 }
 
 /* Sections */
 section {
-  margin-top: 20px;
-}
-img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 20px;
 }
 
 /* Image */
@@ -36,23 +34,19 @@ img{
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
   display: block;
   margin: 20px auto;
-}
-#about img:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
+  object-fit: cover;
 }
 #about p {
-  max-width: 600px;
-  margin: 10px auto;
+  font-size: 16px;
   line-height: 1.6;
+  padding: 0 10px;
 }
-
-/* Text */
-p {
-  line-height: 1.6;
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 /* Skills */
@@ -65,22 +59,25 @@ li {
   margin: 8px;
 }
 
-/* Cards */
-.card {
+/* Projects */
+.project {
   background: #1e293b;
-  margin: 15px;
+  margin: 15px auto;
   padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
+  border-radius: 10px;
+  width: 80%;
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #38bdf8;
+/* Button */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 
 /* Footer */
 footer {
-  padding: 20px;
-  background: #020617;
+  background: #1e293b;
+  padding: 15px;
 }
